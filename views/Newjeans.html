@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a { background-color: rgba(22, 100, 225, 0.889);
+            text-decoration: none;
+            font-size:2rem;
+            color:white;
+            padding:10px 20px 10px 20px;
+            margin:20px;
+            display:inline-block;
+            border-radius: 10px;
+            transition:all 0.1s;
+            text-shadow: 0px -2px rgba(0, 0, 0, 0.44);
+            font-family: 'Lobster', cursive;
+            cursor:pointer;
+        }
+       
+    </style>
+</head>
+<body>
+    <img width="300px" src="https://w.namu.la/s/0f0f182dcbb699f9b1d7d2e026b8654dbc881bfacf21427fe20dca1c0557bd38ffeb0c108c070906773b0e3f16eaf85ca44ab8481804761662c5eaa6b4594653c32fe5a9ca91c1eed3540b22fca35769da31ff995fd1cfd63624c26ea3f4a06c7c61c6f4e9043131767f195fd0e51ec7">
+    <br>
+    <h1>NewJeans - mini 1st 'NewJeans'</h1>
+    <br>
+    <br>
+    1. <a id="0" onclick="musicSelect(0)">attention</a><br>
+    2. <a id="1" onclick="musicSelect(1)">Hype boy</a><br>
+    3. <a id="2" onclick="musicSelect(2)">Cookie</a><br>
+    4. <a id="3" onclick="musicSelect(3)">Hurt</a><br>
+
+    <iframe id='music' width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- <embed id='music' src="http://www.youtube.com/embed/version=3&amp;hl=ko_KR&autoplay=1&loop=1&amp;rel=0" type="application/x-shockwave-flash" width="300" height="25" allowscriptaccess="always" allowfullscreen="true"></embed> -->
+
+
+
+
+</body>
+</html>
+<script href="app.js">
+
+let vidEle = document.querySelector('#music');
+
+let muiscSrc =  ['wG8N_Uv_c58','OYyrZNU4Jl8','LnQw62a0Jy0','QvsLTKbjGWA'];
+ 
+
+
+
+
+function musicSelect (id) 
+{
+    vidEle.src = 'https://www.youtube.com/embed/' + muiscSrc[id] +'?autoplay=1&mute=0'
+}
+
+</script>
